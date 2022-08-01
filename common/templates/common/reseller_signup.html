@@ -1,0 +1,66 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Reseller Signup
+        {% endblock %}
+    </title>
+    <!-- <link rel="stylesheet" href="{% static '/css/projecthome.css' %}"> -->
+</head>
+<body>
+    {% block content %}
+    <center>
+        <h1>RESELLER SIGNUP</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <th>Full Name : </th>
+                    <td><input type="text" required placeholder="First Name"></td>
+                    <td><input type="text" required placeholder="Last Name"></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <th>Email : </th>
+                    <td colspan="2"><input type="email" placeholder="Email"></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <th>Address : </th>
+                    <td colspan="2"><input type="text" size="46" placeholder="Street Address"></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"><input type="text" size="46" placeholder="Street Address Line 2"></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td></td>
+                    <td><input type="text" placeholder="District"></td>
+                    <td><input type="text" placeholder="State"></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <th>Phone Number : </th>
+                    <td colspan="2"><input type="number" required placeholder="Phone Number" min="600000000"></td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>
+                    <td></td>
+                    <th colspan="2"><input type="submit" value="SIGNUP"></th>
+                </tr>
+            </table>
+        </form>
+    </center>
+
+    {% endblock %}
+</body>
+</html>
+    
