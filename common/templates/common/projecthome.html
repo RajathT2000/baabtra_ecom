@@ -1,6 +1,4 @@
-{% extends 'common/base.html' %}
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +10,72 @@
             Home
         {% endblock %}
     </title>
-    <!-- <link rel="stylesheet" href="{% static '/css/projecthome.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/projecthome.css' %}">
 </head>
 <body>
-    {% block content %}
-    <h1 style="text-align: center;">Index</h1>
-    {% endblock %}
+    <div class="container">
+        <div class="header">
+            <img class="fb" src="{% static 'images/fb.png' %}" alt="">
+            <img class='ot' src="{% static 'images/tw.png' %}" alt="">
+            <img class='ot' src="{% static 'images/in.png' %}" alt="">
+            <img class='ot' src="{% static 'images/lin.png' %}" alt="">
+            <span class="contact">Contact Us</span>
+            <img class='ot' src="{% static 'images/ph.png' %}" alt="">
+            <span id="ph">+91 9847 6590 22</span>
+        </div>
+        <nav>
+            <img id="baabtra_img" src="{% static 'images/baabtra.png' %}" alt="">
+            <ul>
+                <li><select>
+                    <option value="">INTERNSHIP PROGRAMS</option>
+                </select></li>
+                <li>PLACEMENTS</li>
+                <li>ABOUT US</li>
+                <li>BLOG</li>
+                <li>LOGIN</li>
+                <li><button>ENQUIRE NOW</button></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <img id="oray" src="{% static 'images/oray.png' %}" alt="">
+            <div class="main-text">
+                <h1>GETTING A SOFTWARE JOB IS SO EASY WITH OUR INTERNSHIP PROGRAM</h1>
+                <h4>Learn programming from the most trusted software training company in Calicut with highest  placement record. Enroll for software courses and internship programs in Python,PHP, Angular or flutter  to start your career.</h4>
+            </div>
+        </div>
+        <div class="pgm">
+            <div class="pgms">
+                <div class="pgms2">
+                    <img src="{% static 'images/python.webp' %}" alt="">
+                    <span>Python Programing</span>
+                </div>
+                <div class="pgms2">
+                    <img src="{% static 'images/python.webp' %}" alt="">
+                    <span>Python Programing</span>
+                </div>
+                <div class="pgms2">
+                    <img src="{% static 'images/python.webp' %}" alt="">
+                    <span>Python Programing</span>
+                </div>
+                <div class="pgms2">
+                    <img src="{% static 'images/python.webp' %}" alt="">
+                    <span>Python Programing</span>
+                </div>
+                <div class="pgms2">
+                    <img src="{% static 'images/python.webp' %}" alt="">
+                    <span>Python Programing</span>
+                </div>
+                <br>    
+                <span>
+                    <h1>
+                        Explore Our internship programme
+                    </h1>
+                    <h4>
+                        baabtra.com offers you courses and training programs that will enable you to master programming in depth. Enroll and start learning with the experts in the industry. We offer PHP Training with Laravel Framework, Python Training with Django Framework, Angular Training and Node.js Training.
+                    </h4>
+                </span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
